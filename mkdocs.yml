@@ -1,6 +1,6 @@
 site_name: My Documentation
 theme:
-  name: windmill
+  name: mkdocs
 nav:
   - Home: index.md
 
