@@ -1,6 +1,6 @@
 site_name: My Documentation
 theme:
-  name: mkdocs
+  name: readthedocs
 nav:
   - Home: index.md
 
