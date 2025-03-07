@@ -22,7 +22,10 @@ jobs:
 
             - name: Install MkDocs and Plugins
               run: |
-                pip install mkdocs mkdocs-material mkdocs-cinder mkdocs-windmill
+                pip install mkdocs 
+                pip install mkdocs-material 
+                pip install mkdocs-cinder 
+                pip install mkdocs-windmill
             
             - name: Configure Git Credentials 
               run: | 
@@ -30,6 +33,8 @@ jobs:
                 git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
             - name: Build and Deploy Documentation
+              run: |
+                mkdocs gh-deploy --force --remote-branch gh-pages
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: mkdocs gh-deploy --force --remote-branch gh-pages
+              
