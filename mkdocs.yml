@@ -1,0 +1,8 @@
+site_name: My Documentation
+theme:
+  name: windmill
+nav:
+  - Home: index.md
+  - About Us: page.md
+  - BotKube: botkube.md
+
